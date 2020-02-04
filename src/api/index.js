@@ -1,6 +1,3 @@
-const baseUrl = process.env.REACT_APP_API_HOST;
-const storage = window.localStorage;
-
 export const getDataRequest = () => (
   fetch('https://pokeapi.co/api/v2/pokemon/eevee', {
     method: 'GET',
@@ -8,6 +5,10 @@ export const getDataRequest = () => (
   .then(res => res.json())
   .catch((err) => { throw (err); })
 );
+
+/*
+const baseUrl = process.env.REACT_APP_API_HOST;
+const storage = window.localStorage;
 
 export const loginUserRequest = (payload) => {
   return fetch(`${baseUrl}/login`, {
@@ -30,8 +31,6 @@ export const loginUserRequest = (payload) => {
       throw (error);
     });
 };
-
-/*
 
 export const getInitialData = (token) => {
   return fetch(`${baseUrl}/initialdata`, {

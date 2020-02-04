@@ -25,7 +25,6 @@ const Home =({ getData, mock, loading, clearData }) => {
           <div className='card-content'>
             <div className="">
               <h2>Welcome</h2>
-              { mock ? mock.name : 'None' } has landed
             </div>
           </div>
           <div className="card-content">
